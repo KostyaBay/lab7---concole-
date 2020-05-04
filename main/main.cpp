@@ -6,8 +6,11 @@ int main()
   cout<<"Push 1 to turn console ON"<<endl;
   cout<<"Push 2 to moved to the next channel"<<endl;
   cout<<"Push 3 to moved to the previous channel"<<endl;
-  cout<<"Push 4 to increased the sound"<<endl;
-  cout<<"Push 5 to reduced sound"<<endl;
+  cout<<"Push 4 to change brightness"<<endl;
+  cout<<"Push 5 to change contrast"<<endl;
+  cout<<"Push 6 to change the language"<<endl;
+  cout<<"Push 7 to increased the sound"<<endl;
+  cout<<"Push 8 to reduced sound"<<endl;
   cout<<"Push 10 to exit"<<endl;
   int b;
   Console a;
