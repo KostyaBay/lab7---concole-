@@ -23,6 +23,12 @@ class Control
     void choice(int b);
   };
 
+  class Settings_control:public Control,Console
+  {
+    public:
+    void choice(int b);
+  };
+  
   class Volume_control: public Control,Console
   {
     public:
