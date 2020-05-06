@@ -71,4 +71,15 @@ void TV:: reaction(int b)
        break;
     }
     }
-void Human:: choice(int a) {};  
+void Human:: choice(int a) 
+{
+  switch(a)
+  {
+    case 0:
+    cout<<"Dear Human: TV OFF"<<'\n';
+    break;
+    case 1:
+    cout<<"Dear Human: TV ON"<<'\n';
+    break;
+  }
+};   
