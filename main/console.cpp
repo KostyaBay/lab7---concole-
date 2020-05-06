@@ -71,3 +71,4 @@ void TV:: reaction(int b)
        break;
     }
     }
+void Human:: choice(int a) {};  
