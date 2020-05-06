@@ -17,6 +17,8 @@ int main()
     k.enter();
     k.ON();
     k.OFF();
+  Human z;
+  z.choice(a);
   while(b!=10) 
   { 
   cout<<"Enter button: ";
@@ -27,8 +29,6 @@ int main()
     e.choice(b);
   TV x;
     x.reaction(b);
-  Human z;
-  z.choice(a);
   }
     return 0;
 }
