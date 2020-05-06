@@ -40,3 +40,9 @@ class TV
    public:
     void reaction(int b);
   };
+
+class Human
+{
+  public:
+  void choice(int a);
+};
