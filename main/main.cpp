@@ -12,11 +12,11 @@ int main()
   cout<<"Push 7 to increased the sound"<<endl;
   cout<<"Push 8 to reduced sound"<<endl;
   cout<<"Push 10 to exit"<<endl;
-  int b;
-  Console a;
-    a.enter();
-    a.ON();
-    a.OFF();
+  int a,b;
+  Console k;
+    k.enter();
+    k.ON();
+    k.OFF();
   while(b!=10) 
   { 
   cout<<"Enter button: ";
@@ -27,6 +27,8 @@ int main()
     e.choice(b);
   TV x;
     x.reaction(b);
+  Human z;
+  z.choice(a);
   }
     return 0;
 }
