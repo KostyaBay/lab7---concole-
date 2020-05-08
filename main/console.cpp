@@ -26,42 +26,60 @@ void Control:: choice()
       cout<<"Cheked";
     }
   }
-void Channels_control:: choice(int b){};
+void Channels_control:: choice(int b)
+{
+  if((b==2)||(b==3))
+  {
+  cout<<"You push the button - Channels_control"<<endl;
+  }
+};
 
-void Settings_control:: choice(int b){};
+void Settings_control:: choice(int b)
+{
+  if((b==4)||(b==5)||(b==6))
+  {
+  cout<<"You push the button - Settings_control"<<endl;
+  }
+};
 
-void Volume_control:: choice(int b){};
+void Volume_control:: choice(int b)
+{
+  if((b==7)||(b==8))
+  {
+  cout<<"You push the button - Volume_control"<<endl;
+  }
+};
 
 void TV:: reaction(int b)
     {
     switch(b)
     {
    case 0:
-      cout<<"console OFF"<<'\n';
+      cout <<"console OFF"<<'\n';
       break;
    case 1: 
        cout <<"console ON"<< '\n';
        break;
    case 2: 
-       cout <<"You have moved to the next channel"<< '\n'; 
+       cout <<"Got signal"<<'\n'<<"You have moved to the next channel"<< '\n'; 
        break; 
    case 3:
-       cout <<"You have moved to the previous channel"<< '\n';
+       cout <<"Got signal"<<'\n'<<"You have moved to the previous channel"<< '\n';
        break;
    case 4:
-       cout <<"You changed the brightness"<< '\n';
+       cout <<"Got signal"<<'\n'<<"You changed the brightness"<< '\n';
        break;
    case 5:
-       cout <<"You changed the contrast"<< '\n';
+       cout <<"Got signal"<<'\n'<<"You changed the contrast"<< '\n';
        break;
    case 6:
-       cout<<"You change the language"<<'\n';
+       cout <<"Got signal"<<'\n'<<"You change the language"<<'\n';
        break;
    case 7:
-       cout<<"You increased the sound"<<'\n';
+       cout <<"Got signal"<<'\n'<<"You increased the sound"<<'\n';
        break;
    case 8:
-       cout<<"You have reduced sound"<<'\n';     
+       cout <<"Got signal"<<'\n'<<"You have reduced sound"<<'\n';     
        break;       
    case 10: 
        cout<<"The work is completed! Close this window."<<'\n';
