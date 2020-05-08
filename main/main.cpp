@@ -25,6 +25,8 @@ int main()
   cin>>b;
   Channels_control c;
     c.choice(b);
+  Settings_control d;
+    d.choice(b);
   Volume_control e;
     e.choice(b);
   TV x;
