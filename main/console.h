@@ -4,45 +4,43 @@ using namespace std;
 class Console
 {
   public:
-  bool a=0;
-  void enter();
   void ON();
   void OFF();
 };
 
 class Control
 {
-  int c,d;
   public:
+  int b;
   virtual void choice();
 };
 
   class Channels_control:public Control,Console
   {
     public:
-    void choice(int b);
+    void choice();
   };
 
   class Settings_control:public Control,Console
   {
     public:
-    void choice(int b);
+    void choice();
   };
   
   class Volume_control: public Control,Console
   {
     public:
-    void choice(int b);
+    void choice();
   };
 
 class TV
 {
    public:
-    void reaction(int b);
+    void reaction();
   };
 
 class Human
 {
   public:
-  void choice(int a);
+  void choice();
 };
