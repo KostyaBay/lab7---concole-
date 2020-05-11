@@ -1,32 +1,26 @@
 #include "console.h"
 
-void Console:: enter()
+void Console:: ON(Control *control)
   {
-    cin>>a;
-  }
-void Console:: ON()
-  {
-   if(a==1)
+   if(b==1)
     {
      cout<<"console ON"<<endl;
     }
   }
-void Console:: OFF()
+void Console:: OFF(Control *control)
   {
-    if(a==0)
+    if(b==0)
     {
       cout<<"console OFF"<<endl;
     }
   }
 
-void Control:: choice()
+void Control:: choice(int b)
   {
-    if(c==d)
-    {
-      cout<<"Cheked";
-    }
+     cout<<"Enter button: ;
+     cin>>b;
   }
-void Channels_control:: choice(int b)
+void Channels_control:: choice(Control *control)
 {
   if((b==2)||(b==3))
   {
@@ -34,7 +28,7 @@ void Channels_control:: choice(int b)
   }
 };
 
-void Settings_control:: choice(int b)
+void Settings_control:: choice(Control *control)
 {
   if((b==4)||(b==5)||(b==6))
   {
@@ -42,7 +36,7 @@ void Settings_control:: choice(int b)
   }
 };
 
-void Volume_control:: choice(int b)
+void Volume_control:: choice(Control *control)
 {
   if((b==7)||(b==8))
   {
@@ -50,7 +44,7 @@ void Volume_control:: choice(int b)
   }
 };
 
-void TV:: reaction(int b)
+void TV:: reaction(Console *console)
     {
     switch(b)
     {
@@ -89,7 +83,7 @@ void TV:: reaction(int b)
        break;
     }
     }
-void Human:: choice(int a) 
+void Human:: choice(Console *console) 
 {
   switch(a)
   {
