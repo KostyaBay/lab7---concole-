@@ -2,6 +2,7 @@
 
 void Console:: ON(Control *control)
   {
+  control->ON();
    if(b==1)
     {
      cout<<"console ON"<<endl;
@@ -9,6 +10,7 @@ void Console:: ON(Control *control)
   }
 void Console:: OFF(Control *control)
   {
+  control->OFF();
     if(b==0)
     {
       cout<<"console OFF"<<endl;
@@ -22,6 +24,7 @@ void Control:: choice(int b)
   }
 void Channels_control:: choice(Control *control)
 {
+  control->choice();
   if((b==2)||(b==3))
   {
   cout<<"You push the button - Channels_control"<<endl;
@@ -30,6 +33,7 @@ void Channels_control:: choice(Control *control)
 
 void Settings_control:: choice(Control *control)
 {
+  control->choice();
   if((b==4)||(b==5)||(b==6))
   {
   cout<<"You push the button - Settings_control"<<endl;
@@ -38,6 +42,7 @@ void Settings_control:: choice(Control *control)
 
 void Volume_control:: choice(Control *control)
 {
+  control->choice();
   if((b==7)||(b==8))
   {
   cout<<"You push the button - Volume_control"<<endl;
@@ -46,6 +51,7 @@ void Volume_control:: choice(Control *control)
 
 void TV:: reaction(Console *console)
     {
+  console->reaction();
     switch(b)
     {
    case 0:
@@ -85,6 +91,7 @@ void TV:: reaction(Console *console)
     }
 void Human:: choice(Console *console) 
 {
+  console->choice();
   switch(b)
   {
     case 0:
