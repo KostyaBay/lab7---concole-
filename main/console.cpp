@@ -19,7 +19,7 @@ void Console:: OFF(Control *control)
 
 void Control:: choice(int b)
   {
-     cout<<"Enter button: ;
+     cout<<"Enter button: ";
      cin>>b;
   }
 void Channels_control:: choice(Control *control)
