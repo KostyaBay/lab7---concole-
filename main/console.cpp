@@ -85,7 +85,7 @@ void TV:: reaction(Console *console)
     }
 void Human:: choice(Console *console) 
 {
-  switch(a)
+  switch(b)
   {
     case 0:
     cout<<"Dear Human: TV OFF"<<'\n';
