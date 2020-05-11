@@ -12,25 +12,20 @@ int main()
   cout<<"Push 7 to increased the sound"<<endl;
   cout<<"Push 8 to reduced sound"<<endl;
   cout<<"Push 10 to exit"<<endl;
-  int a,b;
+
+  while(b!=10) 
+  {
   Console k;
-    k.enter();
     k.ON();
     k.OFF();
-  Human z;
-  z.choice(a);
-  while(b!=10) 
-  { 
-  cout<<"Enter button: ";
-  cin>>b;
-  Channels_control c;
-    c.choice(b);
-  Settings_control d;
-    d.choice(b);
-  Volume_control e;
-    e.choice(b);
+  Control c;  
+    c.choice(&Control.Channels_control);
+    c.choice(&Control.Settings_control);
+    c.choice(&Control.Volume_control);
   TV x;
-    x.reaction(b);
+    x.reaction(&Control.Console);
+  Human z;
+    z.choice(&Control.Console);
   }
     return 0;
 }
